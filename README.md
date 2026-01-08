@@ -1,29 +1,34 @@
 # Job Listings Scraper & Analysis
 
-## Description
-This project collects job listing data using Python and performs data analysis to understand job market trends such as hiring locations and job roles.
+## 📌 Project Description
+This project collects job listing data from online job portals and performs data analysis to understand job market trends such as role demand, location demand, and required skills.
 
-## Project Structure
-- **scraper/** – Contains Python script to scrape job listings  
-- **analysis/** – Data cleaning and analysis scripts  
-- **data/** – Raw and cleaned CSV datasets  
-
-## Tools & Technologies
+## 🛠 Tools & Technologies
 - Python
-- Requests
 - BeautifulSoup
+- Requests
 - Pandas
 - Matplotlib
 
-## Key Insights
-- Identified top hiring locations
-- Analyzed job role distribution
-- Cleaned and structured raw job listing data
+## 📂 Project Structure
+- scraper/ → Scrapes job listings
+- data/ → Stores raw and cleaned CSV files
+- analysis/ → Data analysis and visualization
+- README.md → Project documentation
 
-## Visualizations
-- Bar chart showing jobs by location
-- Bar chart showing jobs by role
+## 📊 Analysis Performed
+- Job role distribution
+- Location-wise job demand
+- Skill demand analysis
+- Data cleaning and preprocessing
 
-## Outcome
-This project demonstrates web scraping, data cleaning, and exploratory data analysis skills using Python. It helps understand job market trends and builds a strong foundation for data analyst roles.
+## 📈 Output
+- Cleaned CSV datasets
+- Bar charts showing job and skill trends
+- Insights into in-demand job roles and skills
 
+## ✅ Conclusion
+This project helps understand current job market requirements and supports data-driven career planning.
+
+## 👩‍💻 Author
+Bhargavi Chinnaparapu
