@@ -35,9 +35,6 @@ This project collects job listing data from online job portals and performs data
 ### Job Roles Distribution
 ![Role Chart](charts/role_chart.png)
 
-## ✅ Conclusion
-This project helps understand current job market requirements and supports data-driven career planning.
-
 ## ▶️ How to Run
 
 1. Install libraries
@@ -48,6 +45,9 @@ python scraper/job_scraper.py
 
 3. Run analysis
 python analysis/analysis.py
+
+## ✅ Conclusion
+This project helps understand current job market requirements and supports data-driven career planning.
 
 ## 👩‍💻 Author
 Bhargavi Chinnaparapu
