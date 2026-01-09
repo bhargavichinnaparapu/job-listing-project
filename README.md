@@ -27,6 +27,14 @@ This project collects job listing data from online job portals and performs data
 - Bar charts showing job and skill trends
 - Insights into in-demand job roles and skills
 
+## 📊 Sample Output
+
+### Job Locations Distribution
+![Location Chart](charts/location_chart.png)
+
+### Job Roles Distribution
+![Role Chart](charts/role_chart.png)
+
 ## ✅ Conclusion
 This project helps understand current job market requirements and supports data-driven career planning.
 
