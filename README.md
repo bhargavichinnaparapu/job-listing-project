@@ -24,8 +24,8 @@ This project collects job listing data from online job portals and performs data
 
 ##  Output
 - Cleaned CSV datasets
-- Bar charts showing job and skill trends
-- Insights into in-demand job roles and skills
+- Bar charts showing job roles, locations and skill trends
+- Insights into in-demand job roles, locations and skills
 
 ##  Visualizations
 

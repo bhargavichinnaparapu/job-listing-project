@@ -59,40 +59,24 @@ if role_column:
 else:
     print(" Role column not found")
 
-# --------------------------------
-# STEP 4: Skill demand analysis
-# --------------------------------
-skill_column = None
-for col in df.columns:
-    if "skill" in col.lower():
-        skill_column = col
-        break
+# ---------- Skill Demand Analysis ----------
 
-if skill_column:
-    print(f"\n Skill column detected: {skill_column}")
+skills = ["Python", "SQL", "Excel", "Power BI"]
+skill_count = {skill: 0 for skill in skills}
 
-    skills = df[skill_column].dropna().str.lower().str.split(",")
-    all_skills = skills.explode().str.strip()
+# Check skills in job titles or descriptions
+for title in df["Role"]:
+    for skill in skills:
+        if skill.lower() in title.lower():
+            skill_count[skill] += 1
 
-    top_skills = all_skills.value_counts().head(10)
+# Convert to DataFrame
+skill_df = pd.DataFrame(list(skill_count.items()), columns=["Skill", "Count"])
 
-    print("\n Top 10 In-Demand Skills:")
-    print(top_skills)
-
-    # Plot skills
-    plt.figure()
-    top_skills.plot(kind="bar")
-    plt.title("Top 10 In-Demand Skills")
-    plt.xlabel("Skill")
-    plt.ylabel("Job Count")
-    plt.tight_layout()
-    plt.show()
-
-    # Save result
-    top_skills.to_csv("../data/top_skills.csv")
-    print("\n Top skills saved to data/top_skills.csv")
-
-else:
-    print(" No skill-related column found")
-
-print("\n Analysis completed successfully!")
+# Plot Skill Chart
+plt.figure()
+plt.bar(skill_df["Skill"], skill_df["Count"])
+plt.xlabel("Skills")
+plt.ylabel("Number of Jobs")
+plt.title("Skill Demand from Job Listings")
+plt.show()
