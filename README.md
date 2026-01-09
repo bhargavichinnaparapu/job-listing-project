@@ -35,7 +35,7 @@ This project collects job listing data from online job portals and performs data
 ![Role Chart](charts/role_chart.png)
 
 ### Skills Distribution
-![Skills Chart](charts/skills_chart.png)
+![Skills Chart](charts/skill_chart.png)
 
 ## How to Run
 1. Install required libraries
