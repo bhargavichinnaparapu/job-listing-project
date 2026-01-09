@@ -38,5 +38,16 @@ This project collects job listing data from online job portals and performs data
 ## ✅ Conclusion
 This project helps understand current job market requirements and supports data-driven career planning.
 
+## ▶️ How to Run
+
+1. Install libraries
+pip install requests beautifulsoup4 pandas matplotlib
+
+2. Run scraper
+python scraper/job_scraper.py
+
+3. Run analysis
+python analysis/analysis.py
+
 ## 👩‍💻 Author
 Bhargavi Chinnaparapu
