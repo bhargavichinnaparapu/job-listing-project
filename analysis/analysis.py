@@ -14,14 +14,14 @@ print("✅ Dataset loaded successfully")
 print("\nFirst 5 rows:")
 print(df.head())
 
-print("\n📌 Columns in dataset:")
+print("\n Columns in dataset:")
 print(df.columns.tolist())
 
 # -----------------------------
 # STEP 2: Jobs count by location
 # -----------------------------
 if "Location" in df.columns:
-    print("\n📍 Jobs by Location:")
+    print("\n Jobs by Location:")
     print(df["Location"].value_counts().head(10))
 
     plt.figure()
@@ -33,7 +33,7 @@ if "Location" in df.columns:
     plt.savefig("../charts/location_chart.png")
     plt.show()
 else:
-    print("⚠️ 'Location' column not found")
+    print(" 'Location' column not found")
 
 # --------------------------
 # STEP 3: Jobs count by role
@@ -45,7 +45,7 @@ for col in df.columns:
         break
 
 if role_column:
-    print(f"\n💼 Jobs by Role ({role_column}):")
+    print(f"\n Jobs by Role ({role_column}):")
     print(df[role_column].value_counts().head(10))
 
     plt.figure()
@@ -57,7 +57,7 @@ if role_column:
     plt.savefig("../charts/role_chart.png")
     plt.show()
 else:
-    print("⚠️ Role column not found")
+    print(" Role column not found")
 
 # --------------------------------
 # STEP 4: Skill demand analysis
@@ -69,14 +69,14 @@ for col in df.columns:
         break
 
 if skill_column:
-    print(f"\n🛠 Skill column detected: {skill_column}")
+    print(f"\n Skill column detected: {skill_column}")
 
     skills = df[skill_column].dropna().str.lower().str.split(",")
     all_skills = skills.explode().str.strip()
 
     top_skills = all_skills.value_counts().head(10)
 
-    print("\n🔥 Top 10 In-Demand Skills:")
+    print("\n Top 10 In-Demand Skills:")
     print(top_skills)
 
     # Plot skills
@@ -90,9 +90,9 @@ if skill_column:
 
     # Save result
     top_skills.to_csv("../data/top_skills.csv")
-    print("\n💾 Top skills saved to data/top_skills.csv")
+    print("\n Top skills saved to data/top_skills.csv")
 
 else:
-    print("⚠️ No skill-related column found")
+    print(" No skill-related column found")
 
-print("\n🎉 Analysis completed successfully!")
+print("\n Analysis completed successfully!")

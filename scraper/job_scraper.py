@@ -21,4 +21,4 @@ for job in jobs:
 df = pd.DataFrame(job_list, columns=["Role", "Company", "Location"])
 df.to_csv("../data/job_listings.csv", index=False)
 
-print("✅ Job listings scraped successfully")
+print(" Job listings scraped successfully")
