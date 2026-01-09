@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 # ----------------
 df = pd.read_csv("../data/job_listings.csv")
 
-print("✅ Dataset loaded successfully")
+print("Dataset loaded successfully")
 print("\nFirst 5 rows:")
 print(df.head())
 
@@ -21,7 +21,7 @@ print(df.columns.tolist())
 # STEP 2: Jobs count by location
 # -----------------------------
 if "Location" in df.columns:
-    print("\n Jobs by Location:")
+    print("\nJobs by Location:")
     print(df["Location"].value_counts().head(10))
 
     plt.figure()
@@ -33,7 +33,7 @@ if "Location" in df.columns:
     plt.savefig("../charts/location_chart.png")
     plt.show()
 else:
-    print(" 'Location' column not found")
+    print("'Location' column not found")
 
 # --------------------------
 # STEP 3: Jobs count by role
@@ -45,7 +45,7 @@ for col in df.columns:
         break
 
 if role_column:
-    print(f"\n Jobs by Role ({role_column}):")
+    print(f"\nJobs by Role ({role_column}):")
     print(df[role_column].value_counts().head(10))
 
     plt.figure()
@@ -64,16 +64,16 @@ else:
 skills = ["Python", "SQL", "Excel", "Power BI"]
 skill_count = {skill: 0 for skill in skills}
 
-# Check skills in job titles or descriptions
+#Check skills in job titles or descriptions
 for title in df["Role"]:
     for skill in skills:
         if skill.lower() in title.lower():
             skill_count[skill] += 1
 
-# Convert to DataFrame
+#Convert to DataFrame
 skill_df = pd.DataFrame(list(skill_count.items()), columns=["Skill", "Count"])
 
-# Plot Skill Chart
+#Plot Skill Chart
 plt.figure()
 plt.bar(skill_df["Skill"], skill_df["Count"])
 plt.xlabel("Skills")
