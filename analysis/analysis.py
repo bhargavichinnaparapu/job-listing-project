@@ -30,6 +30,7 @@ if "Location" in df.columns:
     plt.xlabel("Location")
     plt.ylabel("Number of Jobs")
     plt.tight_layout()
+    plt.savefig("../charts/location_chart.png")
     plt.show()
 else:
     print("⚠️ 'Location' column not found")
@@ -53,6 +54,7 @@ if role_column:
     plt.xlabel("Role")
     plt.ylabel("Number of Jobs")
     plt.tight_layout()
+    plt.savefig("../charts/role_chart.png")
     plt.show()
 else:
     print("⚠️ Role column not found")
