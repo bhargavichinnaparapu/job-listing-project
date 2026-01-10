@@ -48,7 +48,7 @@ python scraper/job_scraper.py
 python analysis/analysis.py
 
 ## Project demo
-Demo video: https://drive.google.com/drive/my-drive
+Demo video: https://drive.google.com/file/d/1MxzVNgfXRypOsWwsXb5diLdO887DRtLD/view?usp=sharing
 
 ## Conclusion
 This project provides insights into current job market requirements and supports data-driven career planning.
