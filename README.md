@@ -3,8 +3,6 @@
 ## Project Description
 This project collects job listing data from online job portals and performs data analysis to identify job market trends, including role demand, location demand, and required skills.
 
-## Project Demo Gif
-![Project Demo](demo.gif)
 <h2 align="center">🎥 Project Demo</h2>
 
 <p align="center">
