@@ -9,6 +9,8 @@ This project collects job listing data from online job portals and performs data
   <img src="demo.gif" width="500"/>
 </p>
 
+🔗 Full demo video: https://drive.google.com/file/d/1MxzVNgfXRypOsWwsXb5diLdO887DRtLD/view?usp=sharing
+
 ## Tools & Technologies
 - Python
 - BeautifulSoup
@@ -52,9 +54,6 @@ python scraper/job_scraper.py
 
 3. Run the analysis
 python analysis/analysis.py
-
-## Project demo
-Demo video: https://drive.google.com/file/d/1MxzVNgfXRypOsWwsXb5diLdO887DRtLD/view?usp=sharing
 
 ## Conclusion
 This project provides insights into current job market requirements and supports data-driven career planning.
